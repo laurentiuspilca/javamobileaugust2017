@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.telacad.ro.jmc1e2.MainActivity">
+
+    <TextView
+        android:text="Nume"
+        android:textSize="20dp"
+        android:layout_width="67dp"
+        android:layout_height="20dp"
+        tools:layout_editor_absoluteY="179dp"
+        app:layout_constraintRight_toLeftOf="@+id/editTextName"
+        android:layout_marginRight="8dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="235dp"
+        android:layout_height="35dp"
+        tools:layout_editor_absoluteY="179dp"
+        tools:layout_editor_absoluteX="123dp" />
+
+    <Button
+        android:id="@+id/btnSayHello"
+        android:text="ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="273dp"
+        tools:layout_editor_absoluteX="148dp" />
+
+</android.support.constraint.ConstraintLayout>

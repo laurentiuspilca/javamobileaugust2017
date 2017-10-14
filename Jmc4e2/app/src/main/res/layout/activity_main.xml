@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.telacad.ro.jmc4e2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTOR"
+        android:id="@+id/actor"
+        app:layout_constraintBottom_toTopOf="@+id/singer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/actor_buton"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/actor_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Actor name"
+        app:layout_constraintTop_toBottomOf="@id/actor"
+        app:layout_constraintBottom_toTopOf="@+id/singer"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SINGER"
+        app:layout_constraintBottom_toTopOf="@+id/singer_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/singer_buton"
+        app:layout_constraintTop_toBottomOf="@+id/actor_name"
+        android:id="@+id/singer"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singer_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Singer name"
+        app:layout_constraintTop_toBottomOf="@id/singer"
+        app:layout_constraintBottom_toTopOf="@+id/afisaza"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECTEAZA"
+        app:layout_constraintBottom_toTopOf="@+id/singer"
+        app:layout_constraintLeft_toRightOf="@+id/actor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/actor_buton"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singer_buton"
+        android:text="SELECTEAZA"
+        app:layout_constraintLeft_toRightOf="@id/singer"
+        app:layout_constraintBaseline_toBaselineOf="@+id/singer"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/afisaza"
+        android:text="AFISAZA"
+        app:layout_constraintTop_toBottomOf="@id/singer_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>
